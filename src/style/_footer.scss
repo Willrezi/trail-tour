@@ -1,0 +1,39 @@
+.footer {
+  background-color: $background-green;
+  color: $text-white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Catamaran";
+  font-size: 18px;
+  padding: 20px 0;
+
+  & span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .like {
+    height: 15px;
+    width: 30px;
+  }
+
+  .icons {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+
+    & a {
+      display: flex;
+      color: $text-white;
+      padding: 0 10px;
+    }
+
+    & a:hover {
+      color: $text-green;
+    }
+  }
+}
