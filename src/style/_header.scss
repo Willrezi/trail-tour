@@ -1,12 +1,10 @@
-.header {
-  width: 100%;
-  height: 70px;
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
-  z-index: 1;
-  box-sizing: border-box;
+  @include phone {
+    padding: 10px;
+  }
 }
 
 .header-title {
@@ -20,15 +18,35 @@
   }
 }
 
+.logo-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.logo-btn:hover {
+  cursor: pointer;
+}
+.logo-icon {
+  color: $title-grey;
+  font-size: 1.8rem;
+}
+
 .nav-list {
   display: flex;
+  height: 0;
+  margin: 0;
   list-style-type: none;
-  font-size: 18px;
+  font-size: 30px;
   cursor: pointer;
   font-family: "Catamaran";
+  overflow: hidden;
+  padding-left: 10px;
 
   & li {
     padding: 0 20px;
+    @include phone-tablet {
+      padding-bottom: 20px;
+    }
   }
 
   & li:last-child {
@@ -38,9 +56,46 @@
   & a {
     color: $title-grey;
     text-decoration: none;
+    display: block;
   }
 
   a:hover {
     color: $title-green;
+  }
+}
+
+.show-nav {
+  height: 100vh;
+  flex-direction: column;
+  border-top: 1px solid $title-grey;
+  padding-top: 30px;
+}
+
+@include desktop {
+  .logo-btn {
+    display: none;
+  }
+
+  .nav-list {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-top: none;
+    font-size: 18px;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .show-nav {
+    padding: 0;
   }
 }
