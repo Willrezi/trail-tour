@@ -1,0 +1,32 @@
+.banner {
+  text-align: center;
+  color: $text-white;
+}
+
+.banner-title {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Catamaran";
+  letter-spacing: 8px;
+  margin: 0;
+}
+
+.banner-description {
+  font-family: "Catamaran";
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.btn {
+  border: 2px solid $text-white;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: $text-white;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
