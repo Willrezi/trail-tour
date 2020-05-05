@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Catamaran";
+  color: $title-green;
+  margin: 0;
+}
