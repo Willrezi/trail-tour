@@ -1,0 +1,43 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin-top: 50px;
+  border: 1px solid $border-green;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.newsletter-input {
+  flex: 1;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  &::placeholder {
+    color: $placeholder;
+    font-family: "Catamaran";
+    font-size: 14px;
+  }
+}
+
+.newsletter-button {
+  width: 60px;
+  border: 0;
+  background-color: $background-green;
+  color: $text-white;
+  font-family: "Catamaran";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.newsletter-button:hover {
+  transition: 0.3s all;
+  background-color: $background-green-hover;
+}
