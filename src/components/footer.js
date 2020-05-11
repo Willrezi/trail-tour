@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import like from "../assets/like.svg"
-import socialIcons from "../constants/social-icons"
+import like from "../images/like.svg"
+import SocialIcons from "../constants/social-icons"
 
 const Footer = () => {
   const data = useStaticQuery(
@@ -25,7 +25,7 @@ const Footer = () => {
         <img className="like" src={like} alt="with love" />
       </span>
       <div className="icons">
-        {socialIcons.map((item, index) => {
+        {SocialIcons.map((item, index) => {
           return (
             <a
               key={index}
