@@ -46,7 +46,9 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="contact-form"
         >
-          <label className="contact-label">Nom :</label>
+          <label className="contact-label" htmlFor="name">
+            Nom :
+          </label>
           <input
             className="contact-input"
             type="text"
@@ -58,7 +60,9 @@ const Contact = () => {
           {errors.name && errors.name.type === "required" && (
             <span className="errors">Ce champ est obligatoire</span>
           )}
-          <label className="contact-label">Email :</label>
+          <label className="contact-label" htmlFor="email">
+            Email :
+          </label>
           <input
             className="contact-input"
             placeholder="john.doe@gmail.com"
@@ -76,7 +80,9 @@ const Contact = () => {
           {errors.email && errors.email.type === "pattern" && (
             <span className="errors">Votre email n'est pas valide</span>
           )}
-          <label className="contact-label">Message :</label>
+          <label className="contact-label" htmlFor="message">
+            Message :
+          </label>
           <textarea
             className="contact-input"
             name="message"
