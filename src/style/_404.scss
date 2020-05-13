@@ -1,0 +1,23 @@
+.not-found {
+  font-family: "Catamaran";
+  background-color: $background-grey;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $title-green;
+  flex-direction: column;
+  margin: 60px auto;
+  max-width: 1024px;
+
+  & h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  & p {
+    font-size: 20px;
+    padding: 0 50px;
+    text-align: center;
+  }
+}
