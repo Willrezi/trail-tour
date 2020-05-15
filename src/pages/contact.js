@@ -6,18 +6,20 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 
-const Contact = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      contact: file(relativePath: { eq: "contact.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+const getContact = graphql`
+  query contact {
+    contact: file(relativePath: { eq: "contact.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-  `)
+  }
+`
+
+const Contact = () => {
+  const data = useStaticQuery(getContact)
   const { register, handleSubmit, errors, reset } = useForm()
   const onSubmit = data => {
     if (data) {
