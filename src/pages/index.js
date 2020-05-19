@@ -11,7 +11,7 @@ import Newsletter from "../components/newsletter"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      main: file(relativePath: { eq: "main.jpeg" }) {
+      main: file(relativePath: { eq: "home.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
