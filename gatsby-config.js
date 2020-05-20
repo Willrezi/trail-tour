@@ -13,6 +13,13 @@ module.exports = {
 
   plugins: [
     {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
@@ -26,6 +33,7 @@ module.exports = {
         name: "images",
       },
     },
+
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
