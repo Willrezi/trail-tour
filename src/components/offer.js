@@ -8,7 +8,7 @@ const Offer = () => {
       <div className="offer-block">
         {OfferIcons.map(item => {
           return (
-            <div className="offer-detail">
+            <div className="offer-detail" key={item.key}>
               <span>{item.icon}</span>
               <h4>{item.title}</h4>
               <p>{item.text}</p>
