@@ -1,0 +1,39 @@
+.tours-section {
+  padding: 30px 50px 0;
+  font-family: "Catamaran";
+}
+
+.tours-list {
+  list-style-type: none;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  li {
+    padding: 0 40px 40px;
+    width: 26%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-grey;
+  }
+
+  p {
+    text-align: center;
+
+    &:hover {
+      color: $text-green;
+    }
+  }
+
+  .tours-image {
+    box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+      opacity: 0.5;
+    }
+  }
+}
