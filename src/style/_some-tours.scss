@@ -3,15 +3,26 @@
   font-family: "Catamaran";
 }
 
+.tours-container {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.tours-text {
+  text-align: center;
+  color: $text-grey;
+}
+
 .tours-list {
   list-style-type: none;
   padding: 0 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 50px;
 
   li {
-    padding: 0 40px 40px;
+    padding: 0 25px 20px;
     width: 26%;
   }
 

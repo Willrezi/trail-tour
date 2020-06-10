@@ -2,9 +2,9 @@ import React from "react"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
-const getToursToDisplay = graphql`
+const getFeaturedTours = graphql`
   query {
-    toursToDisplay: allContentfulToursData(
+    featuredTours: allContentfulToursData(
       filter: { displayHome: { eq: true } }
     ) {
       edges {
@@ -27,9 +27,8 @@ const getToursToDisplay = graphql`
 `
 
 const SomeTours = () => {
-  const data = useStaticQuery(getToursToDisplay)
-  const tours = data.toursToDisplay.edges
-  console.log("data", tours)
+  const data = useStaticQuery(getFeaturedTours)
+  const tours = data.featuredTours.edges
 
   return (
     <section className="tours-section">
