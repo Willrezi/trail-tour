@@ -11,6 +11,7 @@
 .tours-text {
   text-align: center;
   color: $text-grey;
+  font-size: 18px;
 }
 
 .tours-list {
@@ -22,7 +23,7 @@
   margin-top: 50px;
 
   li {
-    padding: 0 25px 20px;
+    padding: 0 30px 20px;
     width: 26%;
   }
 
@@ -41,6 +42,8 @@
 
   .tours-image {
     box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    height: 210px;
+    width: 280px;
 
     &:hover {
       box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
