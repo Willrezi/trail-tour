@@ -1,0 +1,44 @@
+.post {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: "Catamaran";
+}
+
+.post-container {
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  color: $text-grey;
+  font-size: 18px;
+}
+
+.post-image-block {
+  display: flex;
+
+  .post-infos {
+    margin-left: 30px;
+    flex: 1;
+
+    & a {
+      color: $text-green;
+    }
+
+    & p {
+      margin: 0;
+    }
+  }
+}
+
+.post-image {
+  width: 400px;
+  height: 320px;
+  box-shadow: 10px 5px 5px $background-grey-dark;
+}
+
+.post-text {
+  margin-top: 20px;
+  margin-left: 5px;
+  text-align: justify;
+}
