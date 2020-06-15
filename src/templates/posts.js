@@ -27,7 +27,6 @@ export const query = graphql`
 `
 
 const Posts = props => {
-  console.log("props", props)
   const {
     name,
     distance,
