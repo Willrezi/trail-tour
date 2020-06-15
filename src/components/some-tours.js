@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
 
 const getFeaturedTours = graphql`
@@ -33,13 +33,13 @@ const SomeTours = () => {
   return (
     <section className="tours-section">
       <h3 className="section-title ">Quelques uns de nos parcours</h3>
-      <div>
+      <div className="tours-container">
         <ul className="tours-list">
           {tours.map(({ node }) => {
             return (
               <li key={node.contentful_id}>
                 <Link to={`/tours/${node.slug}`}>
-                  <Image fluid={node.images[0].fluid} className="tours-image" />
+                  <Img fluid={node.images[0].fluid} className="tours-image" />
                   <p>{node.name}</p>
                 </Link>
               </li>

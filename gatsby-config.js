@@ -3,6 +3,8 @@ module.exports = {
     title: "Trail Tour",
     author: "Wilfried Lloza",
     description: "Des sentiers à découvrir",
+    siteName: "Trailtour.com",
+    url: "https://wwww.trailtour.com",
   },
 
   plugins: [

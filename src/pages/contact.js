@@ -5,10 +5,11 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
+import SEO from "../components/seo"
 
 const getContact = graphql`
   query contact {
-    contact: file(relativePath: { eq: "contact.jpg" }) {
+    contact: file(relativePath: { eq: "connectBcg.jpeg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
@@ -35,6 +36,7 @@ const Contact = () => {
   }
   return (
     <Layout>
+      <SEO title="Contact" />
       <Hero
         img={data.contact.childImageSharp.fluid}
         className="hero hero-min"

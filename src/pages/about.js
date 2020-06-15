@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const getAbout = graphql`
   query aboutImage {
@@ -20,6 +21,7 @@ const About = () => {
   const data = useStaticQuery(getAbout)
   return (
     <Layout>
+      <SEO title="A propos" />
       <div className="about">
         <h3 className="section-title">A propos de nous</h3>
         <div className="about-container">

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 const getTours = graphql`
   query {
@@ -39,6 +40,7 @@ const Tours = () => {
 
   return (
     <Layout>
+      <SEO title="Nos balades" />
       <Hero
         img={data.tourHero.childImageSharp.fluid}
         className="hero hero-min"
